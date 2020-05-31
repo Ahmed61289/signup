@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang=:"en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body bgcolor="efefef">
+    <h1>Signup Form</h1>
+    <form action="https://www.example.com" method="POST">
+        <fieldset>
+            <legend>Personal Details</legend>
+        <!--Personal details begins-->
+        <p>
+        First Name:
+        <input type="text" name="firstname" size="15" maxlength="30" required/>
+        Last Name:
+        <input type="text" name="lastname" size="15" maxlength="30"/>
+        </p>
+
+        <p>
+            Gender:
+            <input id="male" type="radio" name="Gender" value="m" checked/>
+            <label for="male">Male</label>
+            
+            <label><input type="radio" name="Gender" value="f"/>Female</label>
+            <input type="radio" name="Gender" value="n/a"/>Not Applicable
+        </p>
+
+        <p>
+            Nationality:
+            <select name="countries" multiple required>
+                <option value="pakistan">Pakistan</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="bhuttan">Bhuttan</option>
+                <option value="newzland">Newzland</option>
+            </select>
+        </p>
+
+        <p>
+            Date of Birth:
+            <input type="date" name="dob"/>
+        </p>
+
+        <p>
+            Please Enter your Email Address:
+            <input type="email" name="email"/>
+        </p>
+
+        <p>
+            Please Enter your Website:
+            <input type="url" name="website"/>
+        </p>
+
+        <p>
+            Please Enter your Phone Number:
+            <input type="tel" name="contact"/>
+        </p>
+
+        <p>
+            Postal Address:
+        <input type="text" maxlength="100" size="45"/>
+        </p>
+        <!--Personal details ends-->
+    
+        </fieldset>
+
+        <p>
+            Password: 
+            <input type="password" name="password" size="15" maxlength="30" required/>
+        </p>
+
+        <p>
+            Re-enter Password:
+            <input type="password" name="password" size="15" maxlength="30" required/>
+        </p>
+
+        <p>Comments:</p>
+            <textarea name="comments" rows="4" cols="60" >Enter your comments here...</textarea>
+
+        <p>
+            Intrests:
+        </p>
+            <label><input type="checkbox" name="intrests" value="men"/>Men's Clothing</label>
+            <label><input type="checkbox" name="intrests" value="wmn"/>Women's Clothing</label>
+            <label><input type="checkbox" name="intrests" value="acc"/>Accessories</label>
+            <label><input type="checkbox" name="intrests" value="ELectronics"/>ELectronics</label>
+        
+
+        <p>
+            Upload a profile picture
+        </p>
+            <input type="file" name="dp" required>
+        <p>
+            Profile picture should be <i>jpeg, jpg, png</i> and below 2 MB of size.
+        </p>
+            <br />
+            <input type="submit" value="upload">
+            <br />
+            <br />
+            <input type="submit"/>
+            <br />
+            <br />
+            <input type="image" src="../submit.png" width="150" height="50"/>
+
+    </form>
+
+</body>
+</html>
